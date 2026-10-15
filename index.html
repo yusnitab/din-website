@@ -85,8 +85,29 @@ section h2{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:800;margin-bottom:1r
 .cgrid p{margin:0 0 1.2rem}
 .contact .btn{margin-top:.5rem}
 footer{background:var(--dark);color:var(--on-dark);opacity:.8;padding:1.5rem 0;font-size:.85rem;border-top:1px solid #ffffff22}
+
 @media (max-width:760px){
-  nav a:not(:last-child){display:none}
+  header .wrap {
+    padding: 0 10px;
+    gap: 6px;
+  }
+
+  .logo img {
+    height: 28px;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+  }
+
+  nav a {
+    font-size: 9px;
+    margin-left: 0;
+  }
+
   .about,.core,.cgrid,.floor .body{grid-template-columns:1fr}
   .flow,.values,.floor .ph{grid-template-columns:1fr 1fr}
   .vm,.vm .values{grid-template-columns:1fr}
@@ -94,6 +115,7 @@ footer{background:var(--dark);color:var(--on-dark);opacity:.8;padding:1.5rem 0;f
   .hp{max-height:300px}
   .floor .body{padding-left:1.2rem}
 }
+
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
 </head>
